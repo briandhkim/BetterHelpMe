@@ -1,66 +1,74 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Call notes
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+-   nick
+    -   technical lead - 4 years w/ bh
+-   brock
+    -   2 1/2 years
+    -   started as jr dev focused on bug resolution
+    -   now working on B team
 
-## About Laravel
+#### how to get in contact
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-   things to unblock
+-   cannot answer questions on techcnical correctness
+-   will use email thread
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### emphasis on task
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   db schema
+-   php backend queries
+-   routes & controllers
+-   less concerned on:
+    -   nice ui
 
-## Learning Laravel
+<hr>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# Specs
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### STEP 1: BUILD A SURVEY FORM
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+You will need to build a simple survey form.
+The questions and answers of the survey should come from a database so
+it is possible to add, edit, remove and reorder questions and answers
+only by adding, editing, and deleting records from the database (with no
+need to touch the code or change the database schema).
+There are two types of questions: radio (single answer) and checkboxes
+(multiple choice).
+The completed survey will be saved in the database. Many users can
+submit the survey.
 
-## Laravel Sponsors
+Insert these questions into your database (You don't need to build an admin
+page. You can simply insert with SQL queries):
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    How old are you? (radio)
+    - Less than 18
+    - 18-99
+    - More than 99
 
-### Premium Partners
+    Are you happy? (radio)
+    - Yes
+    - No
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    What countries have you visited? (checkboxes)
+    - Spain
+    - France
+    - Italy
+    - England
+    - Portugal
 
-## Contributing
+    What is your favorite sport? (radio)
+    - Football
+    - Basketball
+    - Soccer
+    - Volleyball
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    What programming languages do you know? (checkboxes)
+    - PHP
+    - Ruby
+    - JavaScript
+    - Python
 
-## Code of Conduct
+### STEP 2: BUILD A SURVEY RESULTS PAGE TO INVESTIGATE USER HAPPINESS
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Build a simple page that shows for each question, what is the most popular
+answer for happy users and what is the most popular answer for sad users.
