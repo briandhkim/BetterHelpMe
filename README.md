@@ -1,13 +1,6 @@
 # Call notes
 
--   nick
-    -   technical lead - 4 years w/ bh
--   brock
-    -   2 1/2 years
-    -   started as jr dev focused on bug resolution
-    -   now working on B team
-
-#### how to get in contact
+#### how/when to get in contact
 
 -   things to unblock
 -   cannot answer questions on techcnical correctness
@@ -72,3 +65,10 @@ page. You can simply insert with SQL queries):
 
 Build a simple page that shows for each question, what is the most popular
 answer for happy users and what is the most popular answer for sad users.
+
+## Notes:
+
+- You can use any platform, language, tool, and resources that you like, but *__no ORMs__*, we want to see your general SQL coding skills.
+- You might need to "cut corners" to make this work in just 4 hours. The DB Schema is not the right place to cut corners, please make a proper DB schema and do not make a "bad" DB design just to make your life easier for step 2!
+- The primary goal is to see you complete the project within the time given. Do not over-engineer!
+- After you're finished you will sit down with one of our engineers to discuss and review your code.
