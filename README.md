@@ -16,7 +16,7 @@
 
 <hr>
 
-# Specs
+# [Specs](https://github.com/briandhkim/BetterHelpMe/blob/main/Better%20Survey%20Monkey.pdf)
 
 ### STEP 1: BUILD A SURVEY FORM
 
